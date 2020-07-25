@@ -15,15 +15,23 @@ const IndexPage = () => (
     </div>
     <h1>Hi people</h1>
     
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>編集が反映されているか確認<span class="material-icons">
-    alarm_on
-</span></p>
-    <Button color="primary">material ui button</Button>
+    <p>温度: (データベースから最新の温度取得)℃</p>
+    <p>湿度: (データベースから最新の湿度取得)％</p>
+    <p>編集が反映されているか確認</p>
+    <Button variant="outlined" color="primary">
+      温度
+    </Button>
+    <Button variant="outlined" color="primary">
+      湿度
+    </Button>
+      <span class="material-icons">
+        alarm_on
+      </span>
+    <Button color="primary">material ui button</Button> <br />
+    {/*
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image filename="gatsby-astronaut.png" alt="gatsby-astronaut"/>
-    </div>
+    </div> */}
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/page-3/">Go to page 3</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
