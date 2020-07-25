@@ -44,6 +44,7 @@ const Image = (props) => (
         <Img
           alt={props.alt}
           sizes={imageSizes}
+          id ={props.id}
         />
       );
     }}

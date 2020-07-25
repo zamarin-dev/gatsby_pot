@@ -6,6 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import { Button } from '@material-ui/core';
+import click_jouro from "../components/jouro_drag";
 
 const IndexPage = () => (
   <Layout>
@@ -24,10 +25,23 @@ const IndexPage = () => (
     <Button variant="outlined" color="primary">
       湿度
     </Button>
-      <span class="material-icons">
+      <span className="material-icons">
         alarm_on
       </span>
     <Button color="primary">material ui button</Button> <br />
+
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <div id="clovar">
+      <Image filename="clover_itsutsuba.png" alt="clovar_itsutsuba"/>
+      </div>
+    </div>
+    
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <div id="jouro" onClick = {() => click_jouro("aaaa")}>　
+      <Image filename="gardening_jouro.png" alt="gardening_jouro"/>
+      </div>
+    </div>
+
     {/*
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image filename="gatsby-astronaut.png" alt="gatsby-astronaut"/>
